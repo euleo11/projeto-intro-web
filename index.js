@@ -1,41 +1,53 @@
-const clube = "São Paulo";
-const mundiais = 3;
-const rebaixado = false;
-const spM = clube.toUpperCase();
-const craques = ["Calleri", "Luciano", "Arboleda"]
+const time1 =
+{
+    clube: "São Paulo",
+    mundiais: 3,
+    rebaixado: false,
+    craques: ["Calleri", "Luciano", "Arboleda"]
+}
 
+const time2 =
+{
+    clube: "Palmeiras",
+    mundiais2: 0,
+    rebaixado: true,
+    craques: ["Rony", "Raphael Veiga", "Gustavo Gómez"]
+}
 
-const clube2 = "Palmeiras";
-const mundiais2 = 0;
-const rebaixado2 = true;
-const pM = clube2.toUpperCase();
-const craquesPalmeiras = ["Rony","Raphael Veiga","Gustavo Gómez"]
+const time3 =
+{
+    clube: "Corinthians",
+    mundiais: 2,
+    rebaixado: true,
+    craques: ["Yuri Alberto", "Roger Guedes", "Cássio"]
+}
 
+const timesBrasil = []
+if (time1.rebaixado === true) {
+    timesBrasil.push(time1)
+    alert(`${time1.clube} Já foi rebaixado`)
+    console.log(`${time1.clube} Já foi rebaixado`)
+} else {
+    alert(`${time1.clube} Nunca foi rebaixado`)
+   console.log(`${time1.clube} Nunca foi rebaixado`)
+}
 
-const clube3 = "Corinthians";
-const mundiais3 = 2;
-const rebaixado3 = true;
-const cM = clube3.toUpperCase();
-const craquesCorinthians = ["Yuri Alberto","Roger Guedes","Cássio"]
+if (time2.rebaixado === true) {
+    timesBrasil.push(time2)
+    alert(`${time2.clube} Já foi rebaixado`)
+    console.log(`${time2.clube} Já foi rebaixado`)
+} else {
+    alert(`${time2.clube} Nunca foi rebaixado`)
+    console.log(`${time2.clube} Nunca foi rebaixado`)
+}
 
-console.log(`${spM}
-Mundiais:${mundiais}
-Já foi rabaixado? ${rebaixado}
-Craques do clube:${craques}
+if (time3.rebaixado === true) {
+    timesBrasil.push(time3)
+    alert(`${time3.clube} Já foi rebaixado`)
+   console.log(`${time3.clube} Já foi rebaixado`)
+} else {
+    alert(`${time3.clube} Nunca foi rebaixado`)
+    console.log(`${time3.clube} Nunca foi rebaixado`)
+}
 
-${pM}
-Mundiais:${mundiais2}
-Já foi rabaixado? ${rebaixado2}
-Craques do clube:${craquesPalmeiras}
-
-${cM}
-Mundiais:${mundiais3}
-Já foi rabaixado? ${rebaixado3}
-Craques do clube: ${craquesCorinthians}  
-`)
-
-mediamundias = mundiais + mundiais2 + mundiais3/3
-const timepequeno = rebaixado && rebaixado2 && rebaixado3
-
-console.log(`Média de Mundiais:${mediamundias}`)
-console.log(`Todos os clubes foram rebaixados ?${timepequeno}`)
+console.log(time1, time2, time3)
