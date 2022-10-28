@@ -1,0 +1,173 @@
+ * {
+    margin: 0;
+    padding: 0;
+}
+
+input[type="text" i] {
+    padding: 1px 2px;
+    margin: 20px;
+}
+
+
+
+.button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+.tamanhoImagem {
+    width: 340px;
+    height: 340px;
+    border-radius: 50%;
+}
+
+header {
+    background-color: rgba(255, 0, 238, 0.321);
+    color: aliceblue;
+    text-align: center;
+    height: 101px;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+
+.estilo-do-imput {
+    height: 70px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(255, 0, 238, 0.321);
+    color: aliceblue;
+    position: fixed;
+    bottom:0;
+    left:0;
+    width: 100%;
+}
+
+.efeitotitulo {
+    color: rgb(255, 255, 255);
+    text-shadow: rgb(0, 0, 0) 0.05000em 0.05000em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+}
+
+
+/* .subtitulo {
+    text-shadow: 0 0 0.2em #87F, 0 0 0.2em #87F,
+        0 0 0.2em #87F;
+        padding: 5px;
+} */
+
+.vegan {
+    color: rgba(0, 162, 5, 0.625);
+    text-shadow: rgb(206, 255, 114) 0.05000em 0.05000em;
+}
+
+/* .efeitomain:hover{ */
+    .efeitomain{
+    color:aliceblue;
+    text-shadow: rgb(0, 0, 0) 0.05000em 0.05000em;
+}
+
+
+.estilo-menu-de-pizza{
+    color: aliceblue;
+    padding: 30px;
+    margin-top: 100px;
+    background-color: rgba(0, 0, 0, 0.321);
+    border: 1px solid black;
+    width: 400px;
+    height: 550px;
+    text-align: center;
+    display: block;
+}
+
+.logo{
+    width: 75px;
+    height: 75px;
+    
+}
+
+
+
+/*
+--------MOBILE
+@media screen and (max-device-width: 480px){
+    body, header, footer, main, head{
+        display: flex;
+        flex-direction: column;
+    }
+} */
+
+body{
+    background-image: url(/fundo.jpg);
+    background-size: 100% 100%;
+   }
+
+main{
+    margin-top: 10px;
+}
+
+.cardSabores{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    }
+
+.efeitoSabor{
+    background-color: rgba(0, 0, 0, 0.54);
+}
+
+
+
+
+
+
+/*---------INPUT*/
+
+#searchbar{
+    margin-left: 15%;
+    padding:15px;
+    border-radius: 10px;
+  }
+
+  input[type=text] {
+     width: 30%;
+     -webkit-transition: width 0.15s ease-in-out;
+     transition: width 0.15s ease-in-out;
+  }
+
+  /* When the input field gets focus,
+       change its width to 100% */
+  input[type=text]:focus {
+    width: 70%;
+  }
+
+ #list{
+   font-size:  1.5em;
+   margin-left: 90px;
+  }
+
+.pizzaz{
+  display: list-item;    
+  list-style: none;
+ }
+ 
+ section{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+ }
